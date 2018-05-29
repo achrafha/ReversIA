@@ -1,4 +1,4 @@
-package IA;
+package model;
 
 public interface Game {
 

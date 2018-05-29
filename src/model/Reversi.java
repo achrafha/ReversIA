@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Reversi implements Game {
 
-	private Player black:
+	private Player black;
 	private Player white;
 	private final static int BLACK_VALUE = -1;
 	private final static int WHITE_VALUE = 1;

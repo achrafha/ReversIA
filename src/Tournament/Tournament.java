@@ -11,12 +11,15 @@ public class Tournament {
 		private long end;
 		
 		public int getTotalGames() {
+			return 0;
 			
 		}
 		public int getEndedGames() {
+			return 0;
 			
 		}
 		public long getDuration() {
+			return end;
 			
 		}
 		public void startTournament() {

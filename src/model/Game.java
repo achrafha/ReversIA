@@ -1,5 +1,6 @@
 package model;
 
+import java.awt.Color;
 import java.util.ArrayList;
 
 public interface Game {
@@ -12,8 +13,9 @@ public interface Game {
 	
 	boolean isFinished();
 	boolean isValidMove();
+	int getScore(Player p);
 	
-	ArrayList<Player> getPlayer();
+	ArrayList<Player> getPlayers();
 	Player getNextPlayer();
 	Player getCurrentPlayer();
 	Player getWinner();

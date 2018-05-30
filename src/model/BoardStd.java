@@ -7,20 +7,27 @@ public class BoardStd implements Board {
 	
 	@Override
 	public int getCell(int i, int j) {
-		// TODO Auto-generated method stub
-		return 0;
+		if(i >= size || j >= size) {
+			throw new AssertionError("illegal argument");
+		}
+		return board[i][j];
 	}
 
 	@Override
 	public void playAndUpdate(int i, int j, Player p) {
 		// TODO Auto-generated method stub
-		
 	}
-
-	@Override
-	public int getScore(Player p) {
-		// TODO Auto-generated method stub
-		return 0;
+	
+	public int occurencesOfValue(int value) {
+		int occurences = 0;
+		for(int i = 0; i < board.length; ++i) {
+			for(int j = 0; j < board[i].length; ++j) {
+				if(board[i][j] == value) {
+					++occurences;
+				}
+			}
+		}
+		return occurences;
 	}
 
 	@Override
